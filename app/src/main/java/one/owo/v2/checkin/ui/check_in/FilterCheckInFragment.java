@@ -118,4 +118,8 @@ public class FilterCheckInFragment extends Fragment {
         }
 
     }
+
+    public void onPageSelected() {
+        System.out.println(this + "is on page selected");
+    }
 }

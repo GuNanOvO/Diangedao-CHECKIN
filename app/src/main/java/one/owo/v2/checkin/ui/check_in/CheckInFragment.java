@@ -213,6 +213,8 @@ public class CheckInFragment extends Fragment {
 
         if (fragment instanceof SequentialCheckInFragment) {
             ((SequentialCheckInFragment) fragment).onPageSelected();
+        } else if (fragment instanceof  FilterCheckInFragment) {
+            ((FilterCheckInFragment) fragment).onPageSelected();
         } else if (fragment instanceof UncheckedFragment) {
             ((UncheckedFragment) fragment).onPageSelected();
         } else if (fragment instanceof CheckedInFragment) {

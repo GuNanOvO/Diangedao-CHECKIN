@@ -26,7 +26,6 @@ public class CheckedInFragment extends Fragment {
     private ArrayList<String> names;
     private List<Person> personList;
 
-
     public CheckedInFragment() {
     }
 
