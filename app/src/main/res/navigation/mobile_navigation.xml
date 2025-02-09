@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="one.owo.v2.checkin.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+        android:id="@+id/action_homeFragment_to_checkInFragment"
+        app:destination="@id/check_in" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_statistics"
+        android:name="one.owo.v2.checkin.ui.Statistics.StatisticsFragment"
+        android:label="@string/title_Statistics"
+        tools:layout="@layout/fragment_statistics" />
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="one.owo.v2.checkin.ui.setting.SettingFragment"
+        android:label="@string/title_Setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/check_in"
+        android:name="one.owo.v2.checkin.ui.check_in.CheckInFragment"
+        android:label="checkin"
+        tools:layout="@layout/fragment_check_in" />
+</navigation>
